@@ -5,35 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b29daeb-3a23-4d94-8c52-3a00846af980" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/E.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/F.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/ArrayOperations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/Main1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/ScannerWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab2/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab2/Vector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/Color.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/ScannerWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/engine/BioFuelEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/engine/DieselEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/engine/Engine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/engine/PetrolEngine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/fuel/Biofuels.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/fuel/Diesel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/fuel/Fuel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/fuel/Petrol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/transport/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/transport/Plane.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/transport/Ship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/transport/Transport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/transport/Truck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/ScannerWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/ScannerWork.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +40,7 @@
     "Application.Main1.executor": "Run",
     "Application.Main3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "exceptions",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>

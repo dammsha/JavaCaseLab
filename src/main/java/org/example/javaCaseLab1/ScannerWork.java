@@ -15,19 +15,24 @@ public class ScannerWork {
     private float min;
 
     public void start() {
-        size = getIntInput("Введите размер массива: ", "Введено некорректное число, повторите ввод: ");
-        type = getInputType("Введите тип списка. 1 - целое числа, 2 - дробные числа: ", "Введено некорректное число, повторите ввод: ");
-        max = getFloatInput("Введите максимум: ", "Введено некорректное значение, повторите ввод: ");
-        min = getFloatInput("Введите минимум: ", "Введено некорректное значение, повторите ввод: ");
+        try {
+            size = getIntInput("Введите размер массива: ", "Размер должен быть положительным целым числом.");
+            type = getInputType("Введите тип массива (1 - целые числа, 2 - дробные числа): ", "Введите 1 или 2.");
+            max = getFloatInput("Введите максимальное значение: ", "Некорректное значение. Повторите ввод.");
+            min = getFloatInput("Введите минимальное значение: ", "Некорректное значение. Повторите ввод.");
 
-        while (max < min) {
-            System.out.println("Максимум должен быть больше минимума. Введите снова");
-            max = getFloatInput("Введите максимум: ", "Введено некорректное значение, повторите ввод: ");
-            min = getFloatInput("Введите минимум: ", "Введено некорректное значение, повторите ввод: ");
+            while (max < min) {
+                System.out.println("Ошибка: Максимальное значение не может быть меньше минимального.");
+                max = getFloatInput("Введите максимальное значение: ", "Некорректное значение. Повторите ввод.");
+                min = getFloatInput("Введите минимальное значение: ", "Некорректное значение. Повторите ввод.");
+            }
+
+            generateArray(type);
+        } catch (Exception e) {
+            System.out.println("Произошла непредвиденная ошибка: " + e.getMessage());
+        } finally {
+            scanner.close();
         }
-
-        scanner.close();
-        generateArray(type);
     }
 
     private int getIntInput(String startMsg, String errorMsg) {
@@ -38,11 +43,11 @@ public class ScannerWork {
                 if (input > 0) {
                     return input;
                 } else {
-                    System.out.println(errorMsg);
+                    System.out.println("Ошибка: значение должно быть больше 0.");
                 }
             } catch (InputMismatchException e) {
                 System.out.println(errorMsg);
-                scanner.next();
+                scanner.next(); // Очищает некорректный ввод
             }
         }
     }
@@ -59,7 +64,7 @@ public class ScannerWork {
                 }
             } catch (InputMismatchException e) {
                 System.out.println(errorMsg);
-                scanner.next();
+                scanner.next(); // Очищает некорректный ввод
             }
         }
     }
@@ -71,23 +76,34 @@ public class ScannerWork {
                 return scanner.nextFloat();
             } catch (InputMismatchException e) {
                 System.out.println(errorMsg);
-                scanner.next();
+                scanner.next(); // Очищает некорректный ввод
             }
         }
     }
 
     private void generateArray(int type) {
-        if (type == 1) {
-            this.intArray = generateIntArray(size, max, min);
-            arrayOperations.startAllOperations(intArray);
-        } else {
-            this.floatArray = generateFloatArray(size, max, min);
-            arrayOperations.startAllOperations(floatArray);
+        try {
+            if (type == 1) {
+                this.intArray = generateIntArray(size, max, min);
+                arrayOperations.startAllOperations(intArray);
+            } else if (type == 2) {
+                this.floatArray = generateFloatArray(size, max, min);
+                arrayOperations.startAllOperations(floatArray);
+            } else {
+                throw new IllegalArgumentException("Некорректный тип массива.");
+            }
+        } catch (IllegalArgumentException e) {
+            System.out.println("Ошибка: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Неожиданная ошибка при генерации массива: " + e.getMessage());
         }
     }
 
     private int[] generateIntArray(int size, float max, float min) {
-        intArray = new int[size];
+        if (max < min) {
+            throw new IllegalArgumentException("Максимальное значение меньше минимального.");
+        }
+        int[] intArray = new int[size];
         for (int i = 0; i < size; i++) {
             intArray[i] = (int) ((Math.random() * (max - min + 1)) + min);
         }
@@ -95,7 +111,10 @@ public class ScannerWork {
     }
 
     private float[] generateFloatArray(int size, float max, float min) {
-        floatArray = new float[size];
+        if (max < min) {
+            throw new IllegalArgumentException("Максимальное значение меньше минимального.");
+        }
+        float[] floatArray = new float[size];
         for (int i = 0; i < size; i++) {
             floatArray[i] = (float) (Math.random() * (max - min) + min);
         }
