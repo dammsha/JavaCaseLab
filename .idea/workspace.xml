@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b29daeb-3a23-4d94-8c52-3a00846af980" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/ArrayInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab2/VectorFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab2/VectorOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab2/VectorOperationsInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/ArrayOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/ArrayOperations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/ScannerWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/ScannerWork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab2/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab2/Vector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -40,7 +51,8 @@
     "Application.Main1.executor": "Run",
     "Application.Main3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "exceptions",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "fix",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
