@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4b29daeb-3a23-4d94-8c52-3a00846af980" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/E.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/F.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/ArrayOperations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/ScannerWork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab2/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab2/Vector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/Color.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/ScannerWork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/engine/BioFuelEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/engine/DieselEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/engine/Engine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/engine/PetrolEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/fuel/Biofuels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/fuel/Diesel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/fuel/Fuel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/fuel/Petrol.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/transport/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/transport/Plane.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/transport/Ship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/transport/Transport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab3/transport/Truck.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2pJDBlRA36AoXPDl2Mqk8jq2IBT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.F.executor": "Run",
+    "Application.Main1.executor": "Run",
+    "Application.Main3.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4b29daeb-3a23-4d94-8c52-3a00846af980" name="Changes" comment="" />
+      <created>1732475152937</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1732475152937</updated>
+    </task>
+    <servers />
+  </component>
+</project>
