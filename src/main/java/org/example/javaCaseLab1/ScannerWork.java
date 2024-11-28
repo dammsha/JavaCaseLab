@@ -1,123 +1,84 @@
 package org.example.javaCaseLab1;
 
+import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ScannerWork {
 
     private Scanner scanner = new Scanner(System.in);
-    private ArrayOperations arrayOperations = new ArrayOperations();
-    private int[] intArray;
-    private float[] floatArray;
-    private int size;
-    private int type;
-    private float max;
-    private float min;
 
     public void start() {
         try {
-            size = getIntInput("Введите размер массива: ", "Размер должен быть положительным целым числом.");
-            type = getInputType("Введите тип массива (1 - целые числа, 2 - дробные числа): ", "Введите 1 или 2.");
-            max = getFloatInput("Введите максимальное значение: ", "Некорректное значение. Повторите ввод.");
-            min = getFloatInput("Введите минимальное значение: ", "Некорректное значение. Повторите ввод.");
+            int size = getIntInput("Введите размер массива: ", "Размер должен быть положительным целым числом.");
+            int type = getIntInput("Введите тип массива (1 - целые числа, 2 - дробные числа): ", "Введите 1 или 2.");
+            double min = getDoubleInput("Введите минимальное значение: ", "Некорректное значение.");
+            double max = getDoubleInput("Введите максимальное значение: ", "Некорректное значение.");
 
             while (max < min) {
-                System.out.println("Ошибка: Максимальное значение не может быть меньше минимального.");
-                max = getFloatInput("Введите максимальное значение: ", "Некорректное значение. Повторите ввод.");
-                min = getFloatInput("Введите минимальное значение: ", "Некорректное значение. Повторите ввод.");
+                System.out.println("Максимальное значение должно быть больше минимального.");
+                max = getDoubleInput("Введите максимальное значение: ", "Некорректное значение.");
             }
 
-            generateArray(type);
-        } catch (Exception e) {
-            System.out.println("Произошла непредвиденная ошибка: " + e.getMessage());
+            if (type == 1) {
+                Integer[] array = generateArray(size, (int) min, (int) max);
+                ArrayOperations<Integer> operations = new ArrayOperations<>();
+                processArray(array, operations);
+            } else {
+                Double[] array = generateArray(size, min, max);
+                ArrayOperations<Double> operations = new ArrayOperations<>();
+                processArray(array, operations);
+            }
         } finally {
             scanner.close();
         }
     }
 
-    private int getIntInput(String startMsg, String errorMsg) {
-        while (true) {
-            System.out.print(startMsg);
-            try {
-                int input = scanner.nextInt();
-                if (input > 0) {
-                    return input;
-                } else {
-                    System.out.println("Ошибка: значение должно быть больше 0.");
-                }
-            } catch (InputMismatchException e) {
-                System.out.println(errorMsg);
-                scanner.next();
-            }
-        }
+    private <T extends Number> void processArray(T[] array, ArrayOperations<T> operations) {
+        System.out.println("Максимальное значение: " + operations.findMaxValue(array));
+        System.out.println("Минимальное значение: " + operations.findMinValue(array));
+        System.out.println("Среднее значение: " + operations.calculateAvg(array));
+        System.out.println("Сортировка по возрастанию: " + Arrays.toString(operations.sortArrayIncreasing(array)));
+        System.out.println("Сортировка по убыванию: " + Arrays.toString(operations.sortArrayDecreasing(array)));
     }
 
-    private int getInputType(String startMsg, String errorMsg) {
-        while (true) {
-            System.out.print(startMsg);
-            try {
-                int input = scanner.nextInt();
-                if (input == 1 || input == 2) {
-                    return input;
-                } else {
-                    System.out.println(errorMsg);
-                }
-            } catch (InputMismatchException e) {
-                System.out.println(errorMsg);
-                scanner.next();
-            }
-        }
-    }
-
-    private float getFloatInput(String startMsg, String errorMsg) {
-        while (true) {
-            System.out.print(startMsg);
-            try {
-                return scanner.nextFloat();
-            } catch (InputMismatchException e) {
-                System.out.println(errorMsg);
-                scanner.next();
-            }
-        }
-    }
-
-    private void generateArray(int type) {
-        try {
-            if (type == 1) {
-                this.intArray = generateIntArray(size, max, min);
-                arrayOperations.startAllOperations(intArray);
-            } else if (type == 2) {
-                this.floatArray = generateFloatArray(size, max, min);
-                arrayOperations.startAllOperations(floatArray);
-            } else {
-                throw new IllegalArgumentException("Некорректный тип массива.");
-            }
-        } catch (IllegalArgumentException e) {
-            System.out.println("Ошибка: " + e.getMessage());
-        } catch (Exception e) {
-            System.out.println("Неожиданная ошибка при генерации массива: " + e.getMessage());
-        }
-    }
-
-    private int[] generateIntArray(int size, float max, float min) {
-        if (max < min) {
-            throw new IllegalArgumentException("Максимальное значение меньше минимального.");
-        }
-        int[] intArray = new int[size];
+    private Integer[] generateArray(int size, int min, int max) {
+        Integer[] array = new Integer[size];
         for (int i = 0; i < size; i++) {
-            intArray[i] = (int) ((Math.random() * (max - min + 1)) + min);
+            array[i] = min + (int) (Math.random() * (max - min + 1));
         }
-        return intArray;
+        return array;
     }
 
-    private float[] generateFloatArray(int size, float max, float min) {
-        if (max < min) {
-            throw new IllegalArgumentException("Максимальное значение меньше минимального.");
-        }
-        float[] floatArray = new float[size];
+    private Double[] generateArray(int size, double min, double max) {
+        Double[] array = new Double[size];
         for (int i = 0; i < size; i++) {
-            floatArray[i] = (float) (Math.random() * (max - min) + min);
+            array[i] = min + Math.random() * (max - min);
         }
-        return floatArray;
+        return array;
+    }
+
+    private int getIntInput(String prompt, String errorMessage) {
+        while (true) {
+            try {
+                System.out.print(prompt);
+                return scanner.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println(errorMessage);
+                scanner.next();
+            }
+        }
+    }
+
+    private double getDoubleInput(String prompt, String errorMessage) {
+        while (true) {
+            try {
+                System.out.print(prompt);
+                return scanner.nextDouble();
+            } catch (InputMismatchException e) {
+                System.out.println(errorMessage);
+                scanner.next();
+            }
+        }
     }
 }

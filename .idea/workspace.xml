@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b29daeb-3a23-4d94-8c52-3a00846af980" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab1/ArrayInterface.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab2/VectorFactory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/org/example/javaCaseLab2/VectorOperations.java" afterDir="false" />
@@ -30,6 +29,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -45,11 +49,10 @@
   "keyToString": {
     "Application.F.executor": "Run",
     "Application.Main1.executor": "Run",
-    "Application.Main2.executor": "Run",
     "Application.Main3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "exceptions",
+    "git-widget-placeholder": "fix",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
