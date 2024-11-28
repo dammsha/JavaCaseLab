@@ -3,6 +3,7 @@ package org.example.javaCaseLab1;
 import java.util.Arrays;
 import java.util.Collections;
 
+
 public class ArrayOperations {
 
     public void startAllOperations(int[] intArray) {

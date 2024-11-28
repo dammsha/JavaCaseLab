@@ -75,4 +75,3 @@ public class Vector {
         return vectors;
     }
 }
-

@@ -47,7 +47,7 @@ public class ScannerWork {
                 }
             } catch (InputMismatchException e) {
                 System.out.println(errorMsg);
-                scanner.next(); // Очищает некорректный ввод
+                scanner.next();
             }
         }
     }
@@ -64,7 +64,7 @@ public class ScannerWork {
                 }
             } catch (InputMismatchException e) {
                 System.out.println(errorMsg);
-                scanner.next(); // Очищает некорректный ввод
+                scanner.next();
             }
         }
     }
@@ -76,7 +76,7 @@ public class ScannerWork {
                 return scanner.nextFloat();
             } catch (InputMismatchException e) {
                 System.out.println(errorMsg);
-                scanner.next(); // Очищает некорректный ввод
+                scanner.next();
             }
         }
     }
@@ -121,4 +121,3 @@ public class ScannerWork {
         return floatArray;
     }
 }
-
